@@ -1,0 +1,15 @@
+<div class="bg-dark border-right p-3" id="sidebar">
+    <h3 class="text-light">
+        GIFS APP
+    </h3>
+    <hr class="text-white">
+    <div class="list-group list-reset">
+        <a href="#" 
+           class="btn btn-secondary btn-outline-light" 
+           *ngFor="let valores of obtenerBusquedas; let cont = index"
+           (click)="buscar(valores)">
+            {{valores | titlecase}}
+        </a>
+        <hr class="text-white">
+    </div>
+</div>
